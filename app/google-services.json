@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "112635711513",
+    "firebase_url": "https://styleswiper-1483078596174.firebaseio.com",
+    "project_id": "styleswiper-1483078596174",
+    "storage_bucket": "styleswiper-1483078596174.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112635711513:android:9a149d1f13741776",
+        "android_client_info": {
+          "package_name": "mxi.com.styleswiperbusiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112635711513-kehh01vc2ii0nat9o92hodtkomok7a40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mxi.com.styleswiperbusiness",
+            "certificate_hash": "25F317E8D6205A54ECD28DA9F4573E29651EC660"
+          }
+        },
+        {
+          "client_id": "112635711513-mp85f55fc5o1j3dv7i4g85un816ff7rt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112635711513-mp85f55fc5o1j3dv7i4g85un816ff7rt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

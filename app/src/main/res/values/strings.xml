@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">StyleSwiperBusiness</string>
+    <string name="place_api_key">AIzaSyD8VITpbwz1z0m-JjTFMpBBNPchI0a97mY</string>
+
+    <!-- SignUp screen -->
+    <string name="btn_lbl_already_account">Already account? Sign In Now</string>
+
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone No.</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_store">Store</string>
+    <string name="hint_address">Address</string>
+
+    <string name="btn_lbl_next">Next</string>
+    <string name="btn_lbl_signup">SIGN UP</string>
+
+    <string name="text_lbl_business">Business:</string>
+
+    <string name="rb_lbl_fashion_style">Fashion Style</string>
+    <string name="rb_lbl_hair_style">Hair Style</string>
+
+    <string name="text_lbl_gender">Gender:</string>
+    <string name="rb_lbl_male">Male</string>
+    <string name="rb_lbl_female">Female</string>
+    <!-- SignIn screen -->
+    <string name="btn_lbl_new_user">New User? Sign Up Now</string>
+
+    <string name="hint_username">Email or Phone No.</string>
+    <string name="hint_password_sign_in">Password</string>
+
+    <string name="lbl_forgot_pass">""&#63;</string>
+    <string name="btn_lbl_signin">SIGN IN</string>
+
+    <!--<string name="GOOGLE_API_KEY">AIzaSyAqYcEr2xtolRkbAuwNuNJRtDQ_nkTvXHU</string>-->
+    <string name="GOOGLE_API_KEY"> AIzaSyCAlkY9G1D0-ZK0ia9FPeHRDgfArtX1HIA </string>
+    <string name="title_activity_style_detail">StyleDetail</string>
+</resources>

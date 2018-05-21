@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#53669B</color>//926679
+    <!--<color name="colorPrimaryDark">#520577</color>-->
+    <color name="colorPrimaryDark">#53669B</color>//926679
+    <color name="colorAccent">#926679</color>
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#0000</color>
+    <color name="black_transparent">#CC000000</color>
+
+    <color name="colorTextPrimary">#fff</color>
+    <color name="colorTextSecondary">#fff</color>
+
+    <color name="colorButton">#926679</color>
+    <!--for color transparency-->
+
+<!--
+    100% — FF
+    95% — F2
+    90% — E6
+    85% — D9
+    80% — CC
+    75% — BF
+    70% — B3
+    65% — A6
+    60% — 99
+    55% — 8C
+    50% — 80
+    45% — 73
+    40% — 66
+    35% — 59
+    30% — 4D
+    25% — 40
+    20% — 33
+    15% — 26
+    10% — 1A
+    5% — 0D
+    0% — 00
+-->
+</resources>

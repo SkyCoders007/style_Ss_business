@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mxi.com.styleswiperbusiness">
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Network.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="DATABASE"
+            android:value="style_swiper.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="3" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="mxi.com" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/GOOGLE_API_KEY" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Activities.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.StyleSwiper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SignUpFirst"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SignUpSecond"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AddStyles"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MenuScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".Activities.MyAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ListStyles"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.StyleDetail"
+            android:label="@string/title_activity_style_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.SelectGender"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.WebViewActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

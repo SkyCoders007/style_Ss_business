@@ -1,0 +1,79 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0.9"
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+
+
+
+signing {
+    required { has("release") && gradle.taskGraph.hasTask("uploadArchives") }
+    sign configurations.archives
+}
+
+
+uploadArchives {
+    configuration = configurations.archives
+
+    repositories.mavenDeployer {
+
+        beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+        repository(url: "$System.env.sonatypeRepo") {
+            authentication(userName: "$System.env.sonatypeUsername", password: "$System.env.sonatypePassword")
+        }
+
+        snapshotRepository(url: "$System.env.snapshotRepo") {
+            authentication(userName: "$System.env.sonatypeUsername", password: "$System.env.sonatypePassword")
+        }
+
+        pom.project {
+            name "Android FlingSwipe cards Library"
+            description "Android library that creates a similar effect to Tinder's swipable cards with Fling animation."
+            packaging 'aar'
+            url "https://github.com/Diolor/Swipecards"
+
+            scm {
+                url "scm:git@github.com:Diolor/Swipecards.git"
+                connection "scm:git@github.com:Diolor/Swipecards.git"
+                developerConnection "scm:git@github.com:Diolor/Swipecards.git"
+            }
+
+            licenses {
+                license {
+                    name "The Apache Software License, Version 2.0"
+                    url "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                    distribution 'repo'
+                }
+            }
+
+            developers {
+                developer {
+                    id "diolor"
+                    name "Dionysis Lorentzos"
+                }
+            }
+        }
+    }
+}
